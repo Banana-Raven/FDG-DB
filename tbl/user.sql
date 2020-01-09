@@ -1,6 +1,7 @@
 --data for users table
 CREATE TABLE `user` (
     `user_id` BIGINT NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(64) NOT NULL,
     `created` DATETIME DEFAULT CURRENT_TIMESTAMP,
     `updated` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`user_id`)
